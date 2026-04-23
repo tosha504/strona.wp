@@ -1,16 +1,16 @@
 {
   "src/js/theme.js": {
-    "file": "assets/theme-Dqv7q45-.js",
+    "file": "assets/theme-CKK0XcGL.js",
     "name": "theme",
     "src": "src/js/theme.js",
     "isEntry": true,
     "css": [
       "assets/theme-BHcSP5WY.css",
-      "assets/styles-mcoyIWLQ.css"
+      "assets/styles-D0F28h26.css"
     ]
   },
   "src/sass/theme.scss": {
-    "file": "assets/styles-mcoyIWLQ.css",
+    "file": "assets/styles-D0F28h26.css",
     "src": "src/sass/theme.scss",
     "isEntry": true
   }
