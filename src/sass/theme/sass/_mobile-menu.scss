@@ -1,0 +1,232 @@
+// mobile menu
+
+@include media-breakpoint-down(xl) {
+  .fixedMenu {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    z-index: 1001;
+    background: $white;
+    flex-direction: column;
+    right: -100%;
+    transition: $transition;
+
+    &.active {
+      right: 0;
+    }
+
+    &__header {
+      padding: 0.5rem 20px;
+
+      .fixedMenu__toggler {
+        display: inline-block;
+
+        &--arrow {
+          width: 50px;
+          height: 6px;
+          display: inline-block;
+          transform: rotate(180deg);
+          background-image: url("../../../public/icons/arrow-black.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &--title {
+          color: $black-color;
+          padding-left: 8px;
+        }
+      }
+    }
+
+    &__body {
+      padding: 0.5rem 20px;
+      flex-grow: 1;
+      position: relative;
+      overflow: hidden;
+      .awMegaMenu__col--feature,
+      .awMegaCard--light {
+        border: 1px solid #2056de;
+      }
+      .awMegaMenu__col--feature {
+        border-radius: 1.25rem;
+      }
+      ul {
+        @include list-style-none;
+
+        li {
+          margin-bottom: 5px;
+          position: relative;
+          button {
+            border: none;
+            background: transparent;
+            &:focus {
+              outline: none;
+              border: none !important;
+            }
+          }
+          a,
+          > button {
+            // text-transform: uppercase;
+            // padding: 8px 25px 8px 5px;
+            padding: 0;
+            display: block;
+            position: relative;
+            font-weight: 700;
+            color: $black-color;
+
+            &:hover {
+              color: $primary;
+              opacity: 1;
+            }
+          }
+
+          &.current-menu-item {
+            a,
+            > button {
+              color: $primary;
+            }
+          }
+
+          ul {
+            padding: 10px 0;
+            font-size: 12px;
+
+            li {
+              a,
+              > button {
+                padding: 8px 25px 8px 15px;
+              }
+            }
+
+            ul {
+              li {
+                a,
+                > button {
+                  padding: 8px 25px 8px 25px;
+                }
+              }
+            }
+          }
+        }
+
+        .submenu--toggle > a::after,
+        .submenu--toggle > button::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          top: 50%;
+          transform: translateY(-50%) rotate(180deg);
+          right: 0;
+          background: url("/wp-content/themes/thenewlook/public/icons/chevron-down.svg")
+            no-repeat center;
+          display: block;
+          position: absolute;
+        }
+
+        .submenu--toggle > a.active::after,
+        .submenu--toggle > button.active::after {
+          background: url("/wp-content/themes/thenewlook/public/icons/chevron-up.svg")
+            no-repeat center;
+        }
+
+        li:last-child {
+          margin-bottom: 0;
+        }
+
+        .sub-menu {
+          display: none;
+        }
+      }
+    }
+
+    &__footer {
+      padding: 20px;
+      background-color: $light_grey;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__toggler {
+      display: inline-block;
+
+      &--line {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: $black-color;
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .fixedMenu__toggler--close {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: $black-color;
+      margin-left: auto;
+      width: 100%;
+      justify-content: flex-end;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    .fixedMenu__closeIcon {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      flex: 0 0 20px;
+    }
+
+    .fixedMenu__closeLine {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 18px;
+      height: 2px;
+      background-color: currentColor;
+      border-radius: 999px;
+      transform-origin: center;
+    }
+
+    .fixedMenu__closeLine:first-child {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .fixedMenu__closeLine:last-child {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &__arrow {
+      margin-left: 1rem;
+      display: inline-block;
+      width: 0.65rem;
+      height: 0.65rem;
+      border-left: 2px solid $primary;
+      border-bottom: 2px solid $primary;
+      transform: rotate(-135deg);
+    }
+  }
+
+  .overlay--fixedMenu {
+    @include fadedarkBackground();
+
+    &.active {
+      @include fadedarkBackground-active();
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "key": "group_tnl_project_consult_block",
+  "title": "Block: Project Consult",
+  "fields": [
+    {
+      "key": "field_tnl_project_consult_tab_content",
+      "label": "Content",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_tnl_project_consult_eyebrow",
+      "label": "Eyebrow",
+      "name": "eyebrow",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "Skonsultuj projekt",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_tnl_project_consult_title",
+      "label": "Title",
+      "name": "title",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "",
+      "placeholder": "Zacznij już dziś\nTwój biznes w Internecie\nz WordPress!"
+    },
+    {
+      "key": "field_tnl_project_consult_description",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "wrapper": {
+        "width": "100",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": "wpautop",
+      "placeholder": "Specjalizujemy się w projektowaniu stron internetowych oraz sklepów w oparciu o WordPressa..."
+    },
+    {
+      "key": "field_tnl_project_consult_cta_link",
+      "label": "CTA Link",
+      "name": "cta_link",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_tnl_project_consult_tab_form",
+      "label": "Form",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_tnl_project_consult_form_shortcode",
+      "label": "Form Shortcode",
+      "name": "form_shortcode",
+      "type": "text",
+      "instructions": "Wklej shortcode formularza, np. Contact Form 7.",
+      "required": 0,
+      "wrapper": {
+        "width": "100",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "[contact-form-7 id=\"123\" title=\"Konsultacja projektu\"]",
+      "prepend": "",
+      "append": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/project-consult"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1775510400
+}

@@ -1,0 +1,500 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thenewlook\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 09:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.3\n"
+"X-Domain: thenewlook"
+
+#: inc/template-tags.php:73
+msgid "% Comments"
+msgstr ""
+
+#: inc/custom-functions.php:57
+#, php-format
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/pagination.php:53
+msgid "&laquo;"
+msgstr ""
+
+#: inc/template-tags.php:171
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: inc/pagination.php:54
+msgid "&raquo;"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:59 inc/template-tags.php:65
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:73
+msgid "1 Comment"
+msgstr ""
+
+#: inc/block-editor.php:148
+msgid "A custom Banner with image block."
+msgstr ""
+
+#: inc/block-editor.php:127
+msgid "A custom Banner with vertical buttons block."
+msgstr ""
+
+#: inc/block-editor.php:252
+msgid "A custom Content (background color) block."
+msgstr ""
+
+#: inc/block-editor.php:312
+msgid "A custom Drop-down list of steps block."
+msgstr ""
+
+#: inc/block-editor.php:300
+msgid "A custom FAQ block."
+msgstr ""
+
+#: inc/block-editor.php:167
+msgid "A custom half width window button block."
+msgstr ""
+
+#: inc/block-editor.php:74
+msgid "A custom hero banner block."
+msgstr ""
+
+#: inc/block-editor.php:106
+msgid "A custom icons block with descriptions block."
+msgstr ""
+
+#: inc/block-editor.php:204
+msgid "A custom Image with background image block."
+msgstr ""
+
+#: inc/block-editor.php:180
+msgid "A custom Information 2 columns with icons block."
+msgstr ""
+
+#: inc/block-editor.php:216
+msgid "A custom Multiple price list block."
+msgstr ""
+
+#: inc/block-editor.php:237
+msgid "A custom Services block."
+msgstr ""
+
+#: inc/block-editor.php:276
+msgid "A custom Single price list & content block."
+msgstr ""
+
+#: inc/block-editor.php:264
+msgid "A custom single price list block."
+msgstr ""
+
+#: inc/block-editor.php:192
+msgid "A custom Square divider block."
+msgstr ""
+
+#: inc/block-editor.php:86
+msgid "A custom step list block."
+msgstr ""
+
+#: inc/block-editor.php:288
+msgid "A custom widget posts list."
+msgstr ""
+
+#: inc/deprecated.php:83
+msgid "About:"
+msgstr ""
+
+#: inc/class-wp-bootstrap-navwalker.php:376
+msgid "Add a menu"
+msgstr ""
+
+#: template-parts/block/content-hero-banner.php:106
+msgid "Add background image"
+msgstr ""
+
+#: inc/acf/blog-switch-category.php:21
+msgid "All posts"
+msgstr ""
+
+#: 404.php:34
+msgid "Back to homepage"
+msgstr ""
+
+#: inc/block-editor.php:147
+msgid "Banner with image"
+msgstr ""
+
+#: inc/block-editor.php:126
+msgid "Banner with vertical buttons"
+msgstr ""
+
+#: inc/editor.php:60
+msgid "Blockquote"
+msgstr ""
+
+#: inc/editor.php:66
+msgid "Blockquote Footer"
+msgstr ""
+
+#: index.php:28
+msgid "Blog"
+msgstr ""
+
+#: inc/editor.php:72
+msgid "Cite"
+msgstr ""
+
+#: header.php:78
+msgid "Close"
+msgstr ""
+
+#: inc/template-tags.php:167
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/custom-comments.php:102
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: comments.php:43
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post title
+#: comments.php:36
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: inc/block-editor.php:251
+msgid "Content (background color)"
+msgstr ""
+
+#: inc/custom-header.php:54
+msgid "Default Header Image"
+msgstr ""
+
+#: inc/block-editor.php:311
+msgid "Drop-down list of steps"
+msgstr ""
+
+#: inc/deprecated.php:88
+msgid "Edit"
+msgstr ""
+
+#. %s: Name of current post
+#: inc/template-tags.php:194
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/block-editor.php:299
+msgid "FAQ"
+msgstr ""
+
+#: inc/editor.php:56
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: inc/block-editor.php:166
+msgid "Half width window button"
+msgstr ""
+
+#: inc/block-editor.php:73
+msgid "Hero banner"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://thenewlook.pl/"
+msgstr ""
+
+#: inc/hooks.php:40
+msgid "https://understrap.com"
+msgstr ""
+
+#: inc/hooks.php:30
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/block-editor.php:105
+msgid "Icons block with descriptions"
+msgstr ""
+
+#: inc/block-editor.php:203
+msgid "Image with background image"
+msgstr ""
+
+#: inc/deprecated.php:87
+msgid "in"
+msgstr ""
+
+#: inc/block-editor.php:179
+msgid "Information 2 columns with icons"
+msgstr ""
+
+#: inc/deprecated.php:80
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: searchform.php:20
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: index.php:46
+msgid "Latest posts"
+msgstr ""
+
+#: inc/editor.php:50
+msgid "Lead Paragraph"
+msgstr ""
+
+#: inc/template-tags.php:73
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/widgets.php:115
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/widgets.php:117
+msgid "Left sidebar widget area"
+msgstr ""
+
+#: header.php:37
+msgid "Main Navigation"
+msgstr ""
+
+#: inc/acf/mega-menu.php:42 inc/acf/mega-menu.php:43 inc/acf/mega-menu.php:44
+msgid "Mega menu"
+msgstr ""
+
+#: inc/setup.php:50
+msgid "Mobile Menu"
+msgstr ""
+
+#: inc/block-editor.php:215
+msgid "Multiple price list"
+msgstr ""
+
+#: inc/template-tags.php:177
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: inc/deprecated.php:82
+msgid "Next"
+msgstr ""
+
+#: inc/template-tags.php:232
+msgid "Next post"
+msgstr ""
+
+#: loop-templates/content-none.php:18
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/template-tags.php:288
+msgid "Pages:"
+msgstr ""
+
+#: inc/deprecated.php:86
+msgid "Permanent Link:"
+msgstr ""
+
+#: searchform.php:22
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgctxt "post author"
+msgid "by"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgctxt "post author"
+msgid "Posted by"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgctxt "post date"
+msgid "Posted on"
+msgstr ""
+
+#. %s: Categories of current post
+#: inc/template-tags.php:62
+#, php-format
+msgid "Posted in %s"
+msgstr ""
+
+#: inc/deprecated.php:85
+msgid "Posts by"
+msgstr ""
+
+#: inc/pagination.php:57
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/deprecated.php:81
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php:224
+msgid "Previous post"
+msgstr ""
+
+#: inc/acf/price-list.php:14 inc/acf/price-list.php:15
+#: inc/acf/price-list.php:16
+msgid "Price list"
+msgstr ""
+
+#: inc/setup.php:49
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/deprecated.php:84
+msgid "Profile"
+msgstr ""
+
+#. WordPress
+#: inc/hooks.php:33
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. 1: Link to WP admin new post page.
+#: loop-templates/content-none.php:29
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/widgets.php:103
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/widgets.php:105
+msgid "Right sidebar widget area"
+msgstr ""
+
+#. %s: query term
+#: search.php:34
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/block-editor.php:236 inc/acf/services.php:14 inc/acf/services.php:15
+#: inc/acf/services.php:16
+msgid "Services"
+msgstr ""
+
+#: inc/block-editor.php:263
+msgid "Single price list"
+msgstr ""
+
+#: inc/block-editor.php:275
+msgid "Single price list & content"
+msgstr ""
+
+#: header.php:33
+msgid "Skip to content"
+msgstr ""
+
+#: 404.php:32
+msgid "Sorry, the page you asked for couldn't be found."
+msgstr ""
+
+#: inc/block-editor.php:191
+msgid "Square divider"
+msgstr ""
+
+#: inc/block-editor.php:85
+msgid "Step list with image"
+msgstr ""
+
+#: searchform.php:24
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#. %s: Tags of current post
+#: inc/template-tags.php:68
+#, php-format
+msgid "Tagged %s"
+msgstr ""
+
+#: inc/acf-settings.php:31
+msgid "Theme General Settings"
+msgstr ""
+
+#: inc/acf-settings.php:32
+msgid "Theme Settings"
+msgstr ""
+
+#. 1: Theme name, 2: Theme author
+#: inc/hooks.php:38
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#. Name of the theme
+#. Author of the theme
+msgid "Thenewlook"
+msgstr ""
+
+#. Description of the theme
+msgid "Thenewlook theme"
+msgstr ""
+
+#: 404.php:28
+msgid "This page is gone"
+msgstr ""
+
+#: inc/setup.php:51
+msgid "Topbar Menu"
+msgstr ""
+
+#. Theme version
+#: inc/hooks.php:44
+#, php-format
+msgid "Version: %1$s"
+msgstr ""
+
+#: loop-templates/content.php:42
+msgid "View post"
+msgstr ""
+
+#: inc/block-editor.php:287
+msgid "Widget posts list"
+msgstr ""
+
+#: inc/block-editor.php:340 inc/block-editor.php:345 inc/block-editor.php:350
+#: inc/block-editor.php:355
+msgid "woocommerce"
+msgstr ""

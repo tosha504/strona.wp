@@ -1,0 +1,35 @@
+{
+  "name": "acf/pricing-hero-banner",
+  "title": "Pricing Hero Banner",
+  "description": "Baner cenowy z listą benefitów, CTA i obrazkiem.",
+  "category": "design",
+  "icon": "money-alt",
+  "keywords": [
+    "pricing",
+    "banner",
+    "hero",
+    "cta",
+    "woocommerce"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "jsx": false,
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true
+    }
+  },
+  "style": []
+}

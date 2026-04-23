@@ -1,0 +1,161 @@
+// footer
+#wrapper-footer {
+    padding: 0;
+
+    & .site-footer {
+        padding: 6vh 0;
+    }
+
+    .footer__logo {
+        img {
+            margin-bottom: 1rem;
+            max-width: 200px;
+        }
+        & .navbar-brand {
+            margin: 0;
+        }
+
+        a {
+            color: $black;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            span {
+                white-space: nowrap;
+            }
+            &.phone,
+            &.mail {
+                &:before {
+                    content: '';
+                    display: flex;
+                    max-width: 100%;
+                    width: 2.0625rem;
+                    height: 2.0625rem;
+                }
+            }
+            &.phone {
+                &:before {
+                    background: url('/wp-content/themes/thenewlook/public/icons/kontakt-tel.svg');
+                }
+            }
+            &.mail {
+                &:before {
+                    background: url('/wp-content/themes/thenewlook/public/icons/kontakt-mail.svg');
+                }
+            }
+        }
+    }
+
+    .footer__navigation {
+        &--title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        & ul {
+            @include list-style-none;
+            margin-bottom: 0;
+
+            li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    & .copyrights {
+        padding: 10px 0;
+
+        & a {
+            color: $black;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        & .site-footer {
+            padding: 4vh 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        & .footer__logo {
+            margin-bottom: 30px;
+        }
+
+        & .footer__navigation {
+            &--title {
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 3px;
+                    background-image: url('/wp-content/themes/thenewlook/public/icons/chevron-up.svg');
+                    top: 5px;
+                    transition: $transition;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                }
+            }
+
+            &.active {
+                .footer__navigation--title::after {
+                    transform: rotate(-180deg);
+                }
+            }
+
+            .menu {
+                display: none;
+                padding: 0 0 20px;
+            }
+        }
+    }
+}
+
+#goTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: $transition;
+    border-radius: 20px;
+    @include box-shadow();
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid $light_grey;
+    transform: translateX(10px);
+
+    &::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        opacity: 0.7;
+        transition: $transition;
+        background-position: center;
+        background-image: url('/wp-content/themes/thenewlook/public/icons/chevron-down.svg');
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}

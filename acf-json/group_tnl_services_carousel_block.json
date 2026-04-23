@@ -1,0 +1,97 @@
+{
+  "key": "group_tnl_services_carousel_block",
+  "title": "Block: Services Carousel",
+  "fields": [
+    {
+      "key": "field_tnl_services_carousel_tab_content",
+      "label": "Content",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_tnl_services_carousel_eyebrow",
+      "label": "Eyebrow",
+      "name": "eyebrow",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "25"
+      },
+      "default_value": "",
+      "placeholder": "Usługi"
+    },
+    {
+      "key": "field_tnl_services_carousel_title",
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "default_value": "",
+      "placeholder": "Wybrane usługi"
+    },
+    {
+      "key": "field_tnl_services_carousel_text",
+      "label": "Text",
+      "name": "text",
+      "type": "textarea",
+      "required": 0,
+      "wrapper": {
+        "width": "100"
+      },
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_tnl_services_carousel_header_link",
+      "label": "Header button",
+      "name": "header_link",
+      "type": "link",
+      "required": 0,
+      "wrapper": {
+        "width": "50"
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_tnl_services_carousel_items",
+      "label": "Services",
+      "name": "services_items",
+      "type": "relationship",
+      "instructions": "Wybierz usługi z CPT services i ustaw kolejność.",
+      "required": 1,
+      "post_type": [
+        "services"
+      ],
+      "taxonomy": "",
+      "filters": [
+        "search"
+      ],
+      "elements": "",
+      "min": 1,
+      "max": 12,
+      "return_format": "id"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/services-carousel"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

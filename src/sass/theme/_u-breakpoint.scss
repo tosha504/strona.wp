@@ -1,0 +1,43 @@
+:root {
+    --aw-wide-width: 90vw;
+    --aw-wide-radius: 24px;
+    --stroke: #d6dfff;
+}
+
+/**
+ * Sekcja szersza niż główny container.
+ * Działa nawet jeśli element siedzi wewnątrz .container
+ */
+.u-breakout-90 {
+    width: var(--aw-wide-width);
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/**
+ * Przydatne do sekcji typu hero / banner / promo
+ */
+.u-breakout-card {
+    width: var(--aw-wide-width);
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: var(--aw-wide-radius);
+    overflow: hidden;
+}
+
+.u-round-20 {
+    border-radius: 20px;
+}
+/**
+ * Opcjonalnie: jeśli na mobile chcesz jednak trochę większą szerokość
+ */
+@media (max-width: 767px) {
+    .u-breakout-90,
+    .u-breakout-card {
+        width: 94vw;
+    }
+}

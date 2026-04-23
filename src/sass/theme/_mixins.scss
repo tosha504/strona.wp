@@ -1,0 +1,41 @@
+
+@mixin box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@mixin list-style-none {
+    list-style: none;
+    padding: 0;
+}
+
+@mixin title_section($size){
+    font-size: $size;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@mixin btn_arrow($color){
+    position: relative;
+    display: inline-block;
+    color: $color;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+@mixin fadedarkBackground() {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: $black-color;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+}
+
+@mixin fadedarkBackground-active(){
+    opacity: .85;
+    visibility: visible;
+}

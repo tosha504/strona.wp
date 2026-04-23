@@ -1,0 +1,163 @@
+// mega menu
+.is-megamenu {
+    & .nav-link::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-image: url('/wp-content/themes/thenewlook/public/icons/chevron-up.svg');
+        background-size: 17px 17px;
+        vertical-align: middle;
+        margin-left: 3px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        transition: $transition;
+        position: relative;
+        top: 1px;
+        filter: brightness(0) invert(0);
+    }
+
+    &:hover .nav-link::after {
+        transform: rotate(180deg);
+    }
+
+    .mega_menu {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 90%;
+        background: $white;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: all 0.25s ease-in-out;
+        @include box-shadow;
+        z-index: 99;
+        overflow-x: hidden;
+    }
+
+    &:hover .mega_menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        pointer-events: initial;
+    }
+}
+
+.overlay-megaMenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.25s ease-in-out;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        pointer-events: initial;
+    }
+}
+
+.megaMenu {
+    padding: 30px 0;
+
+    &__item {
+        padding-right: 20px;
+
+        &--header__icon img {
+            max-height: 50px;
+            max-width: 50px;
+            width: 100%;
+            filter: brightness(50%);
+        }
+
+        &--header__link {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            display: inline-block;
+        }
+
+        &--header__description {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &--submenu__list {
+            margin-top: 10px;
+            font-weight: 400;
+            @include list-style-none;
+
+            & li:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            & a,
+            & a:hover {
+                color: $black-color;
+            }
+
+            & .btn-primary {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    &__adds {
+        background: $light_grey;
+        position: relative;
+        padding: 30px 0 30px 30px;
+        font-weight: 400;
+
+        &::after {
+            content: '';
+            right: -100px;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100px;
+            display: block;
+            background: $light_grey;
+            z-index: -1;
+            border-top-right-radius: 50px;
+        }
+
+        &--header__title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        &--header__description {
+            font-size: 12px;
+        }
+
+        &--content__list {
+            @include list-style-none;
+
+            &--item:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            &--item a {
+                color: $black-color;
+            }
+
+            &--item img {
+                border-radius: $border-radius;
+            }
+        }
+
+        &--footer {
+            margin-top: 20px;
+        }
+    }
+}

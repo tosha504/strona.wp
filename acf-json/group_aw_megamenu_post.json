@@ -1,0 +1,318 @@
+{
+  "key": "group_aw_megamenu_post",
+  "title": "AW Mega Menu Layout",
+  "fields": [
+    {
+      "key": "field_aw_mm_tab_main",
+      "label": "Mega menu",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_aw_mm_mobile_panel_title",
+      "label": "Mobile panel title",
+      "name": "mobile_panel_title",
+      "type": "text",
+      "instructions": "Opcjonalny tytuł nagłówka panelu mobile. Jeśli puste, użyje tytułu pozycji menu.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_aw_mm_columns",
+      "label": "Columns",
+      "name": "mm_columns",
+      "type": "flexible_content",
+      "button_label": "Add column",
+      "layouts": [
+        {
+          "key": "layout_aw_mm_links_list",
+          "name": "links_list",
+          "label": "Links list",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_aw_mm_links_span",
+              "label": "Desktop span",
+              "name": "column_span",
+              "type": "select",
+              "choices": {
+                "3": "25%",
+                "4": "33%",
+                "5": "41%",
+                "6": "50%",
+                "7": "58%",
+                "8": "66%",
+                "12": "100%"
+              },
+              "default_value": "4",
+              "ui": 1
+            },
+            {
+              "key": "field_aw_mm_links_heading_icon",
+              "label": "Heading icon",
+              "name": "heading_icon",
+              "type": "image",
+              "return_format": "id",
+              "preview_size": "thumbnail",
+              "library": "all",
+              "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "key": "field_aw_mm_links_heading",
+              "label": "Heading",
+              "name": "heading",
+              "type": "text",
+              "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+              }
+            },
+            {
+              "key": "field_aw_mm_links_items",
+              "label": "Items",
+              "name": "links",
+              "type": "repeater",
+              "layout": "block",
+              "button_label": "Add item",
+              "sub_fields": [
+                {
+                  "key": "field_aw_mm_links_icon",
+                  "label": "Icon",
+                  "name": "icon",
+                  "type": "image",
+                  "return_format": "id",
+                  "preview_size": "thumbnail",
+                  "library": "all"
+                },
+                {
+                  "key": "field_aw_mm_links_title",
+                  "label": "Title",
+                  "name": "title",
+                  "type": "text"
+                },
+                {
+                  "key": "field_aw_mm_links_description",
+                  "label": "Description",
+                  "name": "description",
+                  "type": "textarea",
+                  "rows": 2,
+                  "new_lines": "br"
+                },
+                {
+                  "key": "field_aw_mm_links_link",
+                  "label": "Link",
+                  "name": "link",
+                  "type": "link",
+                  "return_format": "array"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "layout_aw_mm_stacked_cards",
+          "name": "stacked_cards",
+          "label": "2 stacked cards",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_aw_mm_cards_span",
+              "label": "Desktop span",
+              "name": "column_span",
+              "type": "select",
+              "choices": {
+                "3": "25%",
+                "4": "33%",
+                "5": "41%",
+                "6": "50%",
+                "7": "58%",
+                "8": "66%",
+                "12": "100%"
+              },
+              "default_value": "4",
+              "ui": 1
+            },
+            {
+              "key": "field_aw_mm_cards_items",
+              "label": "Cards",
+              "name": "cards",
+              "type": "repeater",
+              "layout": "block",
+              "min": 1,
+              "max": 2,
+              "button_label": "Add card",
+              "sub_fields": [
+                {
+                  "key": "field_aw_mm_cards_theme",
+                  "label": "Theme",
+                  "name": "theme",
+                  "type": "select",
+                  "choices": {
+                    "light": "Light",
+                    "dark": "Dark"
+                  },
+                  "default_value": "light",
+                  "ui": 1
+                },
+                {
+                  "key": "field_aw_mm_cards_icon",
+                  "label": "Icon",
+                  "name": "icon",
+                  "type": "image",
+                  "return_format": "id",
+                  "preview_size": "thumbnail",
+                  "library": "all"
+                },
+                {
+                  "key": "field_aw_mm_cards_title",
+                  "label": "Title",
+                  "name": "title",
+                  "type": "text"
+                },
+                {
+                  "key": "field_aw_mm_cards_text",
+                  "label": "Text",
+                  "name": "text",
+                  "type": "textarea",
+                  "rows": 3,
+                  "new_lines": "br"
+                },
+                {
+                  "key": "field_aw_mm_cards_link",
+                  "label": "Link",
+                  "name": "link",
+                  "type": "link",
+                  "return_format": "array"
+                },
+                {
+                  "key": "field_aw_mm_cards_image",
+                  "label": "Optional image",
+                  "name": "image",
+                  "type": "image",
+                  "return_format": "id",
+                  "preview_size": "thumbnail",
+                  "library": "all"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "layout_aw_mm_feature_card",
+          "name": "feature_card",
+          "label": "Feature card",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_aw_mm_feature_span",
+              "label": "Desktop span",
+              "name": "column_span",
+              "type": "select",
+              "choices": {
+                "3": "25%",
+                "4": "33%",
+                "5": "41%",
+                "6": "50%",
+                "7": "58%",
+                "8": "66%",
+                "12": "100%"
+              },
+              "default_value": "4",
+              "ui": 1
+            },
+            {
+              "key": "field_aw_mm_feature_theme",
+              "label": "Theme",
+              "name": "theme",
+              "type": "select",
+              "choices": {
+                "light": "Light",
+                "dark": "Dark"
+              },
+              "default_value": "light",
+              "ui": 1
+            },
+            {
+              "key": "field_aw_mm_feature_eyebrow",
+              "label": "Eyebrow",
+              "name": "eyebrow",
+              "type": "text"
+            },
+            {
+              "key": "field_aw_mm_feature_title",
+              "label": "Title",
+              "name": "title",
+              "type": "text"
+            },
+            {
+              "key": "field_aw_mm_feature_text",
+              "label": "Text",
+              "name": "text",
+              "type": "textarea",
+              "rows": 4,
+              "new_lines": "br"
+            },
+            {
+              "key": "field_aw_mm_feature_link",
+              "label": "Link",
+              "name": "link",
+              "type": "link",
+              "return_format": "array"
+            },
+            {
+              "key": "field_aw_mm_feature_image",
+              "label": "Image",
+              "name": "image",
+              "type": "image",
+              "return_format": "id",
+              "preview_size": "medium",
+              "library": "all"
+            },
+            {
+              "key": "field_aw_mm_feature_badge",
+              "label": "Badge text",
+              "name": "badge_text",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "megamenu"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1774944000
+}

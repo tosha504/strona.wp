@@ -1,0 +1,54 @@
+{
+  "key": "group_aw_nav_menu_item_megamenu",
+  "title": "AW Mega Menu: Nav item settings",
+  "fields": [
+    {
+      "key": "field_aw_nav_mm_enable",
+      "label": "Enable mega menu",
+      "name": "enable_mega_menu",
+      "type": "true_false",
+      "message": "",
+      "default_value": 0,
+      "ui": 1,
+      "ui_on_text": "Yes",
+      "ui_off_text": "No"
+    },
+    {
+      "key": "field_aw_nav_mm_reference",
+      "label": "Mega menu reference",
+      "name": "mega_menu_reference",
+      "type": "post_object",
+      "post_type": [
+        "megamenu"
+      ],
+      "return_format": "id",
+      "ui": 1,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_aw_nav_mm_enable",
+            "operator": "==",
+            "value": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "nav_menu_item",
+        "operator": "==",
+        "value": "all"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "side",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

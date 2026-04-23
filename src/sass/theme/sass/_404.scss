@@ -1,0 +1,26 @@
+// 404
+
+.error-404{
+    padding: 12vh 0;
+
+    &--title{
+        font-size: $title-size-md;
+
+        @include media-breakpoint-down(lg){
+            font-size: $font-size-big;
+        }
+
+        span{
+            padding: 40px 0;
+            display: block;
+            font-size: 100px;
+            color: $primary;
+        }
+
+    }
+
+    &--text{
+        margin-bottom: 40px;
+    }
+
+}

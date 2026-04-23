@@ -1,0 +1,202 @@
+// General
+// @import 'sass/fonts';
+body {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 400;
+  color: $black-color;
+  font-size: 16px;
+  position: relative;
+  & a {
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:not(.btn):not(.aw-service-promo-card__inner):hover {
+      opacity: $opacity_href;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #112a7b;
+  }
+}
+body,
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $primary rgb(0, 0, 0, 0.1);
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 30px $primary;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .half-container {
+    max-width: $half-container;
+    padding: 0 15px;
+  }
+}
+.mar-left {
+  .half-container {
+    margin-left: auto;
+  }
+}
+.btn {
+  padding: 6px 16px;
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+  &.btn-primary {
+    border: 2px solid $primary;
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+    &:hover,
+    &:focus,
+    &:active {
+      background: $white;
+      color: $primary;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  &.btn-arrow-new,
+  &.btn-arrow-black {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    padding: 0;
+    font-weight: 600;
+    color: $primary;
+
+    &::after {
+      content: "";
+      width: 20px;
+      position: relative;
+      height: 10px;
+      transition: $transition;
+      // margin-left: 50px;
+      background-size: 20px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("/wp-content/themes/thenewlook/public/icons/arrow-prime.svg");
+    }
+  }
+  &.btn-arrow-new {
+    &::after {
+      background-image: url("/wp-content/themes/thenewlook/public/icons/arrow-prime.svg");
+    }
+  }
+  &.btn-arrow-black {
+    color: $black-color;
+    &::after {
+      background-image: url("/wp-content/themes/thenewlook/public/icons/arrow-new-black.svg");
+    }
+  }
+}
+.btn-arrow::after {
+  content: "";
+  width: 70px;
+  position: relative;
+  height: 20px;
+  transition: $transition;
+  margin-left: 50px;
+  background-size: 70px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/wp-content/themes/thenewlook/public/icons/arrow-white.svg");
+}
+.btn-arrow:hover::after {
+  transform: translateX(10px);
+}
+.arrow-down-white {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("/wp-content/themes/thenewlook/public/icons/arrow-down-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrowImg {
+  max-width: 120px;
+  width: 100%;
+  display: inline-block;
+  background-image: url("../../../public/icons/arrow-black.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15px;
+  vertical-align: middle;
+  &.white {
+    background-image: url("/wp-content/themes/thenewlook/public/icons/arrow-white.svg");
+  }
+  @include media-breakpoint-down(lg) {
+    width: 70px;
+    height: 8px;
+  }
+}
+.promoted-text {
+  padding: 3px 10px;
+  font-weight: $font-weight-bold;
+  border-radius: 3px;
+  background-color: #c5fc62;
+  display: inline-block;
+  border-radius: 1.2rem;
+}
+.theme-loader {
+  svg {
+    path {
+      fill: $primary;
+    }
+  }
+}
+.loopContent {
+  font-weight: $font-weight-bold;
+  // text-transform: uppercase;
+  transition: $transition;
+  font-size: $font-size-small;
+}
+.bg-grey {
+  background-color: $bg-grey;
+}
+@include media-breakpoint-down(lg) {
+  .overflow-mobile-none {
+    overflow: hidden;
+  }
+}
+.tnl-badge {
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+@import "sass/header";
+@import "sass/mega-menu";
+@import "sass/mobile-menu";
+@import "sass/footer";
+@import "sass/pages";
+@import "sass/gutenberg";
+@import "sass/price-list";
+@import "sass/blog";
+@import "sass/single-post";
+@import "sass/widgets";
+@import "sass/fixedNav";
+@import "sass/404";

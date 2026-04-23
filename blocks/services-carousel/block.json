@@ -1,0 +1,26 @@
+{
+  "apiVersion": 3,
+  "name": "acf/services-carousel",
+  "title": "Services Carousel",
+  "description": "Karuzela wybranych usług z CPT services.",
+  "category": "widgets",
+  "icon": "slides",
+  "keywords": [
+    "services",
+    "carousel",
+    "swiper"
+  ],
+  "acf": {
+    "apiVersion": 3,
+    "mode": "preview",
+    "renderTemplate": "services-carousel.php"
+  },
+  "supports": {
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "jsx": false
+  }
+}

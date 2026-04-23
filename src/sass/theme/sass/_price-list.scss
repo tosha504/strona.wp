@@ -1,0 +1,149 @@
+.priceList {
+  padding: 80px 30px 60px;
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+
+  .wrap {
+    margin: -47px -30px -60px;
+    padding: 40px 30px 30px;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    background-color: $white;
+  }
+  &__icon-wrap {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &--relatedText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $white;
+    padding: 8px 10px;
+    font-size: $font-size-verysmall;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    text-align: center;
+  }
+
+  &--title {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+    border-radius: 0.625rem;
+    img {
+      max-width: 75px;
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &--desc {
+    margin: 30px 0 0;
+    font-size: $font-size-small;
+  }
+
+  &__price {
+    margin: 30px 0 0;
+    font-size: $font-size-large;
+    color: $primary;
+    &--price {
+      font-weight: $font-weight-bold;
+    }
+    del {
+      color: #331c74;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &--textAfterPrice {
+    display: block;
+    max-width: fit-content;
+    background-color: #eff3fe;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    border-radius: 1.25rem;
+    &--lg {
+      margin: 8px 0;
+      font-size: $font-size-small;
+    }
+  }
+
+  &__btn {
+    margin: 30px 0 0;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    margin: 30px 0 0;
+    list-style: none;
+    padding: 0;
+
+    &__item {
+      font-size: $font-size-small;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      &--status {
+        width: 25px;
+
+        &::before {
+          content: "";
+          width: 15px;
+          height: 15px;
+          display: block;
+          position: relative;
+          top: 3px;
+          background-size: 13px;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        &.IN::before {
+          background-image: url("/wp-content/themes/thenewlook/public/icons/check.svg");
+        }
+
+        &.OUT::before {
+          background-image: url("/wp-content/themes/thenewlook/public/icons/no-check.svg");
+        }
+      }
+
+      &--text {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  &__listContent {
+    position: relative;
+
+    &.optional {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 100%;
+        top: -10px;
+        background-color: $grey;
+      }
+    }
+  }
+}

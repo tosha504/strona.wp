@@ -1,0 +1,390 @@
+@charset "UTF-8";
+.aw-service-promo-card {
+  --card-radius: 24px;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-padding-y: 48px;
+  --card-padding-x: 64px;
+  --card-gap: 0;
+  --card-media-min: 260px;
+  container-type: inline-size;
+  container-name: service-card;
+  position: relative;
+  border-radius: var(--card-radius);
+  margin: clamp(32px, 5vw, 72px) 0;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+}
+.aw-service-promo-card__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 48%);
+  align-items: stretch;
+  min-height: 320px;
+  gap: var(--card-gap);
+  height: 100%;
+}
+.aw-service-promo-card__content {
+  position: relative;
+  z-index: 2;
+  padding: var(--card-padding-y) var(--card-padding-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+.aw-service-promo-card__media {
+  position: relative;
+  min-height: var(--card-media-min);
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  min-width: 0;
+}
+.aw-service-promo-card__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.aw-service-promo-card__image-element {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+.aw-service-promo-card__image-placeholder {
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.7;
+  border-left: 1px dashed rgba(0, 0, 0, 0.12);
+}
+.aw-service-promo-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.aw-service-promo-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.aw-service-promo-card__icon-image {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.aw-service-promo-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  color: #1d1b3f;
+  flex-shrink: 0;
+}
+.aw-service-promo-card__title {
+  margin: 0 0 16px;
+  font-size: clamp(24px, 3vw, 28px);
+  line-height: 1.08;
+  font-weight: 700;
+  text-wrap: balance;
+}
+.aw-service-promo-card__subbadge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.aw-service-promo-card__price {
+  margin-bottom: 16px;
+  font-size: clamp(24px, 2vw, 28px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.aw-service-promo-card__description {
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.65;
+  opacity: 0.92;
+}
+.aw-service-promo-card__description p {
+  margin: 0 0 12px;
+}
+.aw-service-promo-card__description p:last-child {
+  margin-bottom: 0;
+}
+.aw-service-promo-card__actions {
+  margin-top: 24px;
+}
+.aw-service-promo-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+.aw-service-promo-card__link:hover,
+.aw-service-promo-card__link:focus-visible {
+  opacity: 0.85;
+  transform: translateX(2px);
+}
+.aw-service-promo-card__link-arrow {
+  font-size: 16px;
+  line-height: 1;
+}
+.aw-service-promo-card--dark {
+  background: #04134e;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.aw-service-promo-card--dark,
+.aw-service-promo-card--dark .aw-service-promo-card__content,
+.aw-service-promo-card--dark .aw-service-promo-card__title {
+  color: #fff;
+}
+.aw-service-promo-card--dark .aw-service-promo-card__badge {
+  background: #f4c7ea;
+}
+.aw-service-promo-card--dark .aw-service-promo-card__subbadge {
+  background: #112a7b;
+  color: #fff;
+}
+.aw-service-promo-card--dark .aw-service-promo-card__price,
+.aw-service-promo-card--dark .aw-service-promo-card__link {
+  color: #2056de;
+}
+.aw-service-promo-card--dark .aw-service-promo-card__image-placeholder {
+  border-left-color: rgba(255, 255, 255, 0.14);
+}
+.aw-service-promo-card--light {
+  background: #fff;
+  border-color: #d6dfff;
+  color: #211a4b;
+}
+.aw-service-promo-card--light .aw-service-promo-card__content {
+  color: #211a4b;
+}
+.aw-service-promo-card--light .aw-service-promo-card__badge {
+  background: #f6cdee;
+}
+.aw-service-promo-card--light .aw-service-promo-card__subbadge {
+  background: #ffffff;
+  color: #000;
+  border: 1px solid #d6dfff;
+}
+.aw-service-promo-card--light .aw-service-promo-card__price,
+.aw-service-promo-card--light .aw-service-promo-card__link {
+  color: #2056de;
+}
+.aw-service-promo-card {
+  /**
+   * Wariant wymuszony – gdy karta ma zawsze wyglądać jak wersja kolumnowa.
+   * Możesz aktywować:
+   * - przez ACF true/false: force_compact_layout
+   * - albo ręcznie przez className w bloku:
+   *   aw-service-promo-card--compact
+   */
+}
+.aw-service-promo-card--compact .aw-service-promo-card__inner {
+  grid-template-columns: 1fr;
+  min-height: auto;
+}
+.aw-service-promo-card--compact .aw-service-promo-card__content {
+  order: 1;
+  justify-content: flex-start;
+  padding: 32px;
+}
+.aw-service-promo-card--compact .aw-service-promo-card__media {
+  order: 2;
+  min-height: auto;
+  align-items: flex-end;
+  justify-content: center;
+}
+.aw-service-promo-card--compact .aw-service-promo-card__image {
+  width: 100%;
+  height: auto;
+}
+.aw-service-promo-card--compact .aw-service-promo-card__image-element {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center bottom;
+  object-position: center bottom;
+}
+.aw-service-promo-card--compact .aw-service-promo-card__image-placeholder {
+  border-left: 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.12);
+  min-height: 180px;
+}
+.aw-service-promo-card--compact .aw-service-promo-card__description {
+  max-width: 100%;
+}
+.aw-service-promo-card {
+  /**
+   * CONTAINER QUERIES
+   * To jest główny mechanizm dla kart osadzonych w kolumnach.
+   */
+}
+@container service-card (max-width: 820px) {
+  .aw-service-promo-card__inner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .aw-service-promo-card__content {
+    order: 1;
+    justify-content: flex-start;
+    padding: 32px 24px 12px;
+  }
+  .aw-service-promo-card__media {
+    order: 2;
+    min-height: auto;
+    padding: 0 24px 0;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .aw-service-promo-card__image {
+    width: 100%;
+    height: auto;
+  }
+  .aw-service-promo-card__image-element {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center bottom;
+    object-position: center bottom;
+  }
+  .aw-service-promo-card__image-placeholder {
+    border-left: 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.12);
+    min-height: 180px;
+  }
+  .aw-service-promo-card__description {
+    max-width: 100%;
+  }
+}
+@container service-card (max-width: 560px) {
+  .aw-service-promo-card {
+    --card-radius: 18px;
+  }
+  .aw-service-promo-card__content {
+    padding: 24px 20px 12px;
+  }
+  .aw-service-promo-card__top {
+    margin-bottom: 18px;
+  }
+  .aw-service-promo-card__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+  .aw-service-promo-card__title {
+    font-size: 28px;
+  }
+  .aw-service-promo-card__price {
+    font-size: 24px;
+  }
+  .aw-service-promo-card__description {
+    font-size: 14px;
+  }
+  .aw-service-promo-card__media {
+    padding-inline: 20px;
+  }
+}
+.aw-service-promo-card {
+  /**
+   * Fallback dla starszych przeglądarek bez container queries.
+   * Nie idealny, ale bezpieczny.
+   */
+}
+@supports not (container-type: inline-size) {
+  @media (max-width: 991px) {
+    .aw-service-promo-card__inner {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+    .aw-service-promo-card__content {
+      order: 1;
+      justify-content: flex-start;
+      padding: 32px 24px 12px;
+    }
+    .aw-service-promo-card__media {
+      order: 2;
+      min-height: auto;
+      padding: 0 24px 0;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .aw-service-promo-card__image {
+      width: 100%;
+      height: auto;
+    }
+    .aw-service-promo-card__image-element {
+      width: 100%;
+      height: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: center bottom;
+      object-position: center bottom;
+    }
+    .aw-service-promo-card__image-placeholder {
+      border-left: 0;
+      border-top: 1px dashed rgba(0, 0, 0, 0.12);
+      min-height: 180px;
+    }
+  }
+  @media (max-width: 640px) {
+    .aw-service-promo-card {
+      --card-radius: 18px;
+    }
+    .aw-service-promo-card__content {
+      padding: 24px 20px 12px;
+    }
+    .aw-service-promo-card__top {
+      margin-bottom: 18px;
+    }
+    .aw-service-promo-card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
+    .aw-service-promo-card__title {
+      font-size: 28px;
+    }
+    .aw-service-promo-card__price {
+      font-size: 24px;
+    }
+    .aw-service-promo-card__description {
+      font-size: 14px;
+    }
+    .aw-service-promo-card__media {
+      padding-inline: 20px;
+    }
+  }
+} /*# sourceMappingURL=aw-service-promo-card.css.map */

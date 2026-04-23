@@ -1,0 +1,91 @@
+.sideFixedNav {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: $white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    @include box-shadow();
+    z-index: 9;
+    &__list {
+        margin: 0;
+        @include list-style-none();
+        &--item {
+            &:not(:last-child) {
+                border-bottom: 1px solid $grey;
+            }
+            a {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        &--link {
+            padding: 15px;
+            display: block;
+            position: relative;
+            img {
+                max-width: 40px;
+                width: 100%;
+                height: auto;
+            }
+            &::before {
+                content: attr(title);
+                position: absolute;
+                padding: 3px 15px;
+                top: 50%;
+                border-radius: 4px;
+                left: calc(100% + 5px);
+                transform: translateY(-50%);
+                background-color: $black-color;
+                white-space: nowrap;
+                color: $white;
+                font-size: $font-size-small;
+                text-transform: uppercase;
+                transition: $transition;
+                visibility: hidden;
+                opacity: 0;
+            }
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-right: 5px solid $black-color;
+                border-bottom: 5px solid transparent;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: $transition;
+                visibility: hidden;
+                opacity: 0;
+            }
+            &:hover {
+                background-color: $light_grey;
+                &::before,
+                &::after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+body {
+    .sideFixedNav {
+        &__list {
+            &--item {
+                a {
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

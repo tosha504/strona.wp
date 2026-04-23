@@ -1,0 +1,23 @@
+{
+  "name": "acf/project-consult",
+  "title": "Project Consult",
+  "description": "Sekcja CTA z treścią po lewej i formularzem po prawej.",
+  "category": "layout",
+  "icon": "email",
+  "keywords": [
+    "contact",
+    "form",
+    "consult",
+    "cta"
+  ],
+  "acf": {
+    "renderTemplate": "render.php",
+    "mode": "preview",
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": false,
+    "jsx": false
+  }
+}

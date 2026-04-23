@@ -1,0 +1,53 @@
+.widgetPostList{
+    background-color: $light_grey;
+    margin-bottom: 25px;
+
+    &__header{
+        background-color: $black-color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--title{
+            text-align: center;
+            color: $white;
+            margin: 0;
+            padding: 20px;
+            font-size: $font-size-medium;
+
+        }
+
+    }
+
+    &__list{
+        padding: 20px 10px;
+        margin: 0;
+        list-style: none;
+        border: 1px solid $grey;
+
+        &__item{
+
+            line-height: $font-size-normal;
+
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+
+            &--image{
+                img{
+                    border-radius: 4px;
+                    width: 100%;
+                }
+            }
+    
+            &--title{
+                font-size: $font-size-small;
+                color: $black-color;
+            }
+
+        }
+
+
+    }
+
+}

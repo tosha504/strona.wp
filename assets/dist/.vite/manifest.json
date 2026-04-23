@@ -1,0 +1,17 @@
+{
+  "src/js/theme.js": {
+    "file": "assets/theme-Dqv7q45-.js",
+    "name": "theme",
+    "src": "src/js/theme.js",
+    "isEntry": true,
+    "css": [
+      "assets/theme-BHcSP5WY.css",
+      "assets/styles-mcoyIWLQ.css"
+    ]
+  },
+  "src/sass/theme.scss": {
+    "file": "assets/styles-mcoyIWLQ.css",
+    "src": "src/sass/theme.scss",
+    "isEntry": true
+  }
+}

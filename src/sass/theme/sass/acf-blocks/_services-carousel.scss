@@ -1,0 +1,110 @@
+.servicesCarouselBlock {
+    position: relative;
+    padding: clamp(3.2rem, 6vw, 7.2rem) 0;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2.4rem;
+        flex-wrap: wrap;
+        margin-bottom: clamp(2.4rem, 4vw, 4rem);
+    }
+    &__headerLeft,
+    &__headerRight {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    &__headerLeft {
+        @media (min-width: 991.98px) {
+            max-width: calc((100% * 2 / 3) - 1.2rem);
+        }
+    }
+    &__headerRight {
+        display: flex;
+        @media (min-width: 991.98px) {
+            max-width: calc((100% / 3) - 1.2rem);
+        }
+        .btn {
+            margin-left: auto;
+            text-transform: none;
+            font-weight: 700;
+        }
+    }
+
+    &__eyebrow {
+        margin: 0 0 0.8rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #6b5ca5;
+    }
+
+    &__title {
+        margin: 0 0 1.2rem;
+        line-height: 1.05;
+        font-weight: 700;
+        color: #2b1e68;
+    }
+
+    &__text {
+        margin: 0;
+        line-height: 1.7;
+        color: #5f5b73;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__slider {
+        padding-top: 20px !important;
+    }
+
+    &__slide {
+        height: auto;
+    }
+
+    &__pagination {
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1.2rem;
+
+        &.swiper-pagination-lock {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin: 0;
+            opacity: 1;
+            background: transparent;
+            border: 1px solid #cfc9ee;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #6b4de6;
+            border-color: #6b4de6;
+        }
+    }
+
+    &__placeholder {
+        padding: 2rem;
+        border: 1px dashed #d8d3ef;
+        border-radius: 1.6rem;
+        font-size: 1.4rem;
+        color: #6a657f;
+    }
+
+    @media (max-width: 991.98px) {
+        &__header {
+            flex-direction: column;
+        }
+    }
+}

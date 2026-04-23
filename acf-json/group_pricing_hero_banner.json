@@ -1,0 +1,195 @@
+{
+  "key": "group_pricing_hero_banner",
+  "title": "Block: Pricing Hero Banner",
+  "fields": [
+    {
+      "key": "field_phb_content_tab",
+      "label": "Content",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_phb_badge",
+      "label": "Badge",
+      "name": "badge",
+      "type": "text",
+      "instructions": "Krótki label nad tytułem, np. Promocja",
+      "required": 0,
+      "wrapper": {
+        "width": "30"
+      },
+      "default_value": "",
+      "placeholder": "Promocja"
+    },
+    {
+      "key": "field_phb_title",
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "instructions": "Główny nagłówek bloku",
+      "required": 1,
+      "wrapper": {
+        "width": "70"
+      },
+      "default_value": "",
+      "placeholder": "Sklep WordPress cennik"
+    },
+    {
+      "key": "field_phb_description",
+      "label": "Description",
+      "name": "description",
+      "type": "wysiwyg",
+      "instructions": "Krótki opis po lewej stronie",
+      "required": 0,
+      "tabs": "visual",
+      "toolbar": "basic",
+      "media_upload": 0,
+      "delay": 0
+    },
+    {
+      "key": "field_phb_features_tab",
+      "label": "Features list",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_phb_features",
+      "label": "Features",
+      "name": "features",
+      "type": "repeater",
+      "instructions": "Lista benefitów z ikoną",
+      "required": 0,
+      "layout": "row",
+      "button_label": "Add feature",
+      "sub_fields": [
+        {
+          "key": "field_phb_feature_icon",
+          "label": "Icon",
+          "name": "icon",
+          "type": "image",
+          "required": 0,
+          "return_format": "id",
+          "preview_size": "thumbnail",
+          "library": "all",
+          "wrapper": {
+            "width": "30"
+          }
+        },
+        {
+          "key": "field_phb_feature_text",
+          "label": "Text",
+          "name": "text",
+          "type": "text",
+          "required": 1,
+          "wrapper": {
+            "width": "70"
+          },
+          "default_value": "",
+          "placeholder": "Potrzebujesz sklep internetowy"
+        }
+      ]
+    },
+    {
+      "key": "field_phb_price_tab",
+      "label": "Price",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_phb_price_text",
+      "label": "Price text",
+      "name": "price_text",
+      "type": "text",
+      "instructions": "Np. Już od 2550 zł / Sklep Pakiet STARTER",
+      "required": 0,
+      "default_value": "",
+      "placeholder": "Już od 2550 zł / Sklep Pakiet STARTER"
+    },
+    {
+      "key": "field_phb_buttons_tab",
+      "label": "Buttons",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_phb_buttons",
+      "label": "Buttons",
+      "name": "buttons",
+      "type": "repeater",
+      "instructions": "Przyciski CTA",
+      "required": 0,
+      "layout": "table",
+      "button_label": "Add button",
+      "sub_fields": [
+        {
+          "key": "field_phb_button_link",
+          "label": "Link",
+          "name": "link",
+          "type": "link",
+          "required": 1,
+          "return_format": "array"
+        },
+        {
+          "key": "field_phb_button_style",
+          "label": "Style",
+          "name": "style",
+          "type": "select",
+          "required": 0,
+          "choices": {
+            "primary": "Primary",
+            "secondary": "Secondary"
+          },
+          "default_value": "primary",
+          "ui": 1,
+          "return_format": "value"
+        }
+      ]
+    },
+    {
+      "key": "field_phb_media_tab",
+      "label": "Media",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_phb_image",
+      "label": "Image",
+      "name": "image",
+      "type": "image",
+      "instructions": "Główny obrazek po prawej stronie",
+      "required": 0,
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/pricing-hero-banner"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1770000000
+}
